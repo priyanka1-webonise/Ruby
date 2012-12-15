@@ -226,7 +226,7 @@ irb(main):175:0> t2=Time.local(2010, 4, 12)
 irb(main):176:0> t3=t1.year-t2.year
 => 1
 irb(main):177:0> t4=t1.month-t2.month
-=> 1/home/webonise/Ruby
+=> 1
 irb(main):178:0> t5=t1.day-t2.day
 => 0
 irb(main):192:0> puts "year difference" +  t3.to_s()
