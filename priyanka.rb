@@ -26,23 +26,29 @@ end
 $arr1.each do |b|
 puts b
 end
-dd="pp"
-puts dd
+
+
+
 require 'active_record'  
 ActiveRecord::Base.establish_connection(  
 :adapter => "mysql",  
 :host => "localhost",  
-:database => "simple_recipes"  
+:database => "ruby",
+:username => "root",
+:password => "webonise6186"
 )  
-  
-class simple_recipe < ActiveRecord::Base  
+
+class Recipe < ActiveRecord::Base
 end  
-simple_recipe.create(:name => $val., :city => "")  
+
 
 $i=0
 while i<10 do 
 $val=$arr2.at[i]
+$val1=$arr.at[i]
 puts $val
-simple_recipe.create(:recipe_id => i, :recipe_name => "$val")  
-
+puts $val1
+Recipe.create(:rec_id => i,:rec_name => $val,:rec_url => $val1)  
 end
+
+
