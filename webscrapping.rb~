@@ -3,7 +3,6 @@ require 'open-uri'
 require 'nokogiri'
 require 'active_record'
 
-
 require 'active_record'  
 ActiveRecord::Base.establish_connection(  
 :adapter => "mysql2",  
