@@ -40,8 +40,8 @@ e=doc2.xpath('//div[@itemprop="description"]')
 image_url=doc2.xpath('//div[@class="featured-image"]/img/@src')
 #puts image_url
 
-ingredient=doc2.xpath('//div[@id="recipe-ingredients"]/ul/li[@class="ingredient"]').to_s() #.gsub!(/(<[^>]*>)|\n|\t/s){""}
-ingredient.gsub!(/(<[^>]*>)|\n|\t/s){""}
+ingredient=doc2.xpath('//div[@id="recipe-ingredients"]/ul/li[@class="ingredient"]').to_s()
+#ingredient.gsub!(/(<[^>]*>)|\n|\t/s){""}
 #puts ingredient
 
 
